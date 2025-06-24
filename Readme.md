@@ -73,7 +73,7 @@ To deploy the Text to .TXT Bot, follow these steps:
 - Python 3.7+
 - `python-telegram-bot` library (`pip install python-telegram-bot`)
 - A Telegram bot token from [BotFather](https://t.me/BotFather)
-- A public Telegram channel ID or username for sharing files
+- A public/private Telegram channel ID or username for sharing files
 
 ### Steps
 1. **Clone the Repository**:
@@ -89,7 +89,7 @@ To deploy the Text to .TXT Bot, follow these steps:
 
 3. **Configure the Bot**:
    - Replace `"BOT-TOKEN"` in the code with your Telegram bot token.
-   - Set the `CHANNEL_ID` variable to the ID or username of your public Telegram channel (e.g., `@YourChannel` or a numeric ID).
+   - Set the `CHANNEL_ID` variable to the ID or username of your public/private Telegram channel (e.g., `@YourChannel` or a numeric ID).
 
 4. **Run the Bot**:
    ```bash
@@ -151,7 +151,7 @@ For issues or feature requests, please:
 ---
 
 ## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is not licensed.
 
 ---
 

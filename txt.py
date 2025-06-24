@@ -23,8 +23,8 @@ emoji_nogap = "🚫"  # No gap emoji
 emoji_single_space = "⏳"  # Single space emoji
 emoji_newline = "↗️"  # New line emoji
 
-# Channel ID for sending files to a public channel
-CHANNEL_ID = "@textdbbyphilox"
+# Channel ID/@Username for sending files to a public channel
+CHANNEL_ID = ""
 
 # To store the generated files for user retrieval
 user_files = {}
@@ -252,7 +252,8 @@ async def get_all_files(update: Update, context: CallbackContext):
         await update.message.reply_text("You don't have any files generated yet. 😞")
 
 def main():
-    application = Application.builder().token("7596843854:AAHqw_61u9kasmh0eJHGvV8ddwzX7lXmwsQ").build()
+    application = Application.builder().token("BOT-TOKEN").build()
+    #replace this BOT-TOKEN with the bot token
 
     conversation_handler = ConversationHandler(
         entry_points=[CommandHandler("start", start)],
